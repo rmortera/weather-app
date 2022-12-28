@@ -15,9 +15,9 @@ const WeatherApp = () => {
     setLng(position.coords.longitude);
   });
 
-  useEffect(() => {
-    getLocation();
-  }, []);
+  // useEffect(() => {
+  //   getLocation();
+  // }, []);
 
   const getLocation = () => {
     axios
@@ -96,6 +96,12 @@ const WeatherApp = () => {
           <i className="fa-solid fa-temperature-half"></i> Pressure:{" "}
           {weather.main?.pressure} hPa
         </p>
+      </div>
+
+      <div className="getLocation">
+        <button onClick={getLocation} className="btn-temp">
+          Get Location
+        </button>
       </div>
     </div>
   );
