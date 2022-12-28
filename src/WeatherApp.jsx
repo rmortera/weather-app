@@ -100,7 +100,7 @@ const WeatherApp = () => {
 
       <div className="getLocation">
         <button onClick={getLocation} className="btn-temp">
-          Get Location
+          Get current location
         </button>
       </div>
     </div>
