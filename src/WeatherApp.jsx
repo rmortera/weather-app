@@ -80,14 +80,14 @@ const WeatherApp = () => {
 
       <div className="clouds">
         <p>
-          <i className="fa-solid fa-cloud"></i> Clouds: {weather.clouds?.all} %
+          <i className="fa-solid fa-cloud"></i> Clouds: {weather.clouds?.all}%
         </p>
       </div>
 
       <div className="pressure">
         <p>
           <i className="fa-solid fa-cloud-rain"></i> Humidity:{" "}
-          {weather.main?.humidity} %
+          {weather.main?.humidity}%
         </p>
       </div>
 
