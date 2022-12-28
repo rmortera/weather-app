@@ -15,9 +15,9 @@ const WeatherApp = () => {
     setLng(position.coords.longitude);
   });
 
-  // useEffect(() => {
-  //   getLocation();
-  // }, []);
+  useEffect(() => {
+    getLocation();
+  }, []);
 
   const getLocation = () => {
     axios
