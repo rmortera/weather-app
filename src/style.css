@@ -16,7 +16,6 @@
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 40px;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -49,12 +48,28 @@
   margin-bottom: 2rem;
 }
 
+.date {
+  font-size: small;
+  margin-top: 0.1rem;
+}
+
+.temp {
+  margin: 1rem 0;
+}
+
 .btn-temp {
-  margin-top: 1rem;
   border-radius: 5px;
+  margin-bottom: 0.5rem;
   padding: 5px;
 }
 
 .temp h1 {
   font-size: 3rem;
+}
+h3 {
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 1rem;
 }

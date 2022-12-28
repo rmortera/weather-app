@@ -45,10 +45,10 @@ const WeatherApp = () => {
       </div>
 
       <div className="location">
-        <p>
+        <h3>
           {" "}
           {weather.name}, {weather.sys?.country}
-        </p>
+        </h3>
       </div>
       <div className="date">
         <p>{todayDate}</p>
