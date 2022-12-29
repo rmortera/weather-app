@@ -67,11 +67,8 @@ const WeatherApp = () => {
         </button>
       </div>
 
-      <div className="icon">
-        <img src={icon} alt="" />
-      </div>
-
       <div className="description">
+        <img className="icon" src={icon} alt="" />
         <p>
           {" "}
           <em>"{weather.weather?.[0].description}"</em>{" "}

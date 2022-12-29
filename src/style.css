@@ -63,6 +63,10 @@
   padding: 5px;
 }
 
+.description {
+  display: flex;
+}
+
 .icon img {
   margin: auto;
   display: block;
