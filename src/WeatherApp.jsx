@@ -7,7 +7,7 @@ const WeatherApp = () => {
   const [isCelsius, setIsCelsius] = useState(true);
   const [lat, setLat] = useState(0);
   const [lng, setLng] = useState(0);
-  const icon = `http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`;
+  const icon = `https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`;
 
   const apiKey = "48df93cbae7704f9e7d008d9556dce08";
 
