@@ -44,67 +44,71 @@ const WeatherApp = () => {
       <div className="title">
         <h1>Weather App</h1>
       </div>
+      <div className="temp-icon">
+        <div className="forecast item2">
+          <div className="location">
+            <h3>
+              {" "}
+              {weather.name}, {weather.sys?.country}
+            </h3>
+          </div>
+          <div className="date">
+            <p>{todayDate}</p>
+          </div>
 
-      <div className="location">
-        <h3>
-          {" "}
-          {weather.name}, {weather.sys?.country}
-        </h3>
-      </div>
-      <div className="date">
-        <p>{todayDate}</p>
-      </div>
+          <div className="temp">
+            <p>
+              {isCelsius ? celsius : fahrenheit} {isCelsius ? "°C" : "°F"}
+            </p>
+          </div>
 
-      <div className="temp">
-        <h1>
-          {isCelsius ? celsius : fahrenheit} {isCelsius ? "°C" : "°F"}
-        </h1>
-      </div>
+          <div className="degrees">
+            <button onClick={changeTemp} className="btn-temp">
+              Degrees °C / °F
+            </button>
+          </div>
+        </div>
 
-      <div className="degrees">
-        <button onClick={changeTemp} className="btn-temp">
-          Degrees °C / °F
-        </button>
+        <div className="description">
+          <img className="icon item1" src={icon} alt="" />
+          <p className="item2">
+            {" "}
+            <em>"{weather.weather?.[0].description}"</em>{" "}
+          </p>
+        </div>
       </div>
+      <div className="info">
+        <div className="wind">
+          <p>
+            <i className="fa-solid fa-wind"></i> Wind Speed: {wind} km/hr
+          </p>
+        </div>
 
-      <div className="description">
-        <img className="icon" src={icon} alt="" />
-        <p>
-          {" "}
-          <em>"{weather.weather?.[0].description}"</em>{" "}
-        </p>
-      </div>
+        <div className="clouds">
+          <p>
+            <i className="fa-solid fa-cloud"></i> Clouds: {weather.clouds?.all}%
+          </p>
+        </div>
 
-      <div className="wind">
-        <p>
-          <i className="fa-solid fa-wind"></i> Wind Speed: {wind} km/hr
-        </p>
-      </div>
+        <div className="pressure">
+          <p>
+            <i className="fa-solid fa-cloud-rain"></i> Humidity:{" "}
+            {weather.main?.humidity}%
+          </p>
+        </div>
 
-      <div className="clouds">
-        <p>
-          <i className="fa-solid fa-cloud"></i> Clouds: {weather.clouds?.all}%
-        </p>
-      </div>
+        <div className="pressure">
+          <p>
+            <i className="fa-solid fa-temperature-half"></i> Pressure:{" "}
+            {weather.main?.pressure} hPa
+          </p>
+        </div>
 
-      <div className="pressure">
-        <p>
-          <i className="fa-solid fa-cloud-rain"></i> Humidity:{" "}
-          {weather.main?.humidity}%
-        </p>
-      </div>
-
-      <div className="pressure">
-        <p>
-          <i className="fa-solid fa-temperature-half"></i> Pressure:{" "}
-          {weather.main?.pressure} hPa
-        </p>
-      </div>
-
-      <div className="getLocation">
-        <button onClick={getLocation} className="btn-temp">
-          Get current location
-        </button>
+        <div className="getLocation">
+          <button onClick={getLocation} className="btn-location">
+            Get current location
+          </button>
+        </div>
       </div>
     </div>
   );
