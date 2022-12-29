@@ -63,6 +63,11 @@
   padding: 5px;
 }
 
+.icon img {
+  margin: auto;
+  display: block;
+}
+
 .temp h1 {
   font-size: 3rem;
 }
