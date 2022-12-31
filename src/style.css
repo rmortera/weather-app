@@ -69,6 +69,10 @@
   margin: 1rem 0;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 .btn-temp {
   border-radius: 5px;
   padding: 5px;
