@@ -106,6 +106,11 @@ const WeatherApp = () => {
 
         <div className="getLocation">
           <button onClick={getLocation} className="btn-location">
+            {" "}
+            <i
+              onClick={getLocation}
+              className="fa-solid fa-map-location"
+            ></i>{" "}
             Get current location
           </button>
         </div>
